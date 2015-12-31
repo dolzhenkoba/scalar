@@ -2,8 +2,10 @@ body{
 	font: 400 14px 'Source Sans Pro', Arial, sans-serif;
 }
 h1,h2,h3,h4,h5,h6 {
-	font: 700 21px 'Montserrat', Arial, sans-serif;
+	font: 700 25px 'Montserrat', Arial, sans-serif;
 	color: #fff;
+	margin: 0;
+	text-transform: uppercase;
 }
 
 /* Typography */
@@ -60,13 +62,17 @@ textarea {
 	padding-right: 20px;
 	max-width: 960px;
 }
-.ba-header,
-.ba-logo span {
+/*header*/
+.ba-header {
 	background: #7f7e93;
 	color: #fff;
 	font: 700 15px 'Montserrat', Arial, sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 0.66px;
+	top: 0;
+	position: fixed;
+	width: 100%;
+	z-index: 10000;
 }
 .ba-header a {
 	text-decoration: none;
@@ -76,12 +82,10 @@ textarea {
 	float: left;
 	padding-top: 15px;
 }
-.ba-logo span {
-	padding-left: 10px;
-}
-.fa.fa-cube {
+.fa-cube {
 	font-size: 15px;
 	color: #f06862;
+	padding-right: 5px;
 }
 .ba-nav {
 	float: right;
@@ -96,7 +100,7 @@ textarea {
 }
 .ba-menu > li {
 	display: inline-block;
-	padding: 8px;
+	padding: 9px 6px;
 	margin-right: -4px;
 	position: relative;
 }
@@ -168,3 +172,42 @@ textarea {
 .ba-submenu > li:hover .ba-submenu2 {
 	display: block;
 }
+/*ba-banner*/
+.ba-banner {
+	background: #7f7e93 url(../img/banner.jpg) 50% 30% no-repeat;
+	background-size: cover;
+	padding: 138px 0 80px;
+}
+.ba-banner__title {
+	font-size: 33px;
+	letter-spacing: 1.65px;
+	line-height: 49.5px;
+}
+.ba-banner__subtitle {
+	font-size: 18px;
+	font-weight: normal;
+	letter-spacing: 0.91px;
+	line-height: 27.5px;
+	padding: 33px 0 36px;
+}
+.ba-button {
+	font: 700 15px/44px 'Montserrat', Arial, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 0.73px;
+	padding: 0 20px;
+	border: 2px solid #fff;
+	background: rgba(255, 255, 255, 0);
+	outline: none;
+}
+.ba-button a {
+	color: #fff;
+	text-decoration: none;
+}
+.ba-button:hover {
+	background: rgba(255, 255, 255, .1);
+}
+.fa-chevron-right {
+	padding-left: 5px;
+}
+
+
